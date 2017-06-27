@@ -5,6 +5,7 @@ html {
 body {
     width: 100%;
     height: 100%;
+    background-color: #25AADF;
 }
 
 .searchbox {
@@ -13,38 +14,33 @@ body {
     margin-left: 25%;
 	margin-bottom: 20px;
 	height: 20px;
-	border-style: solid;
-	border-color: #21ce99;
 	border-radius: 15px;
 	border-width: 1px 1px 1px 1px;
+    text-align: center;
 	outline: none;
 }
 
 .inputwords {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
-	color: #21ce99;
+	color: white;
 }
 
 .boxy {
-    width: 50%;
+    width: 35%;
     margin: auto;
     margin-top: 20%;
-	border-style: solid;
-    border-width: 2px 3px 2px 3px;
-	border-color: #21ce99;
+    background-color: #4CC2EF;
+    -webkit-box-shadow: 0px 0px 25px 6px rgba(26,128,173,0.66);
+    -moz-box-shadow: 0px 0px 25px 6px rgba(26,128,173,0.66);
+    box-shadow: 0px 0px 25px 6px rgba(26,128,173,0.66);
 }
 .results {
-	width: 50%;
+	width: 100%;
     margin: auto;
-	border-style: solid;
-	border-top-width: 0px;
-	border-bottom-width: 2px;
-	border-left-width: 3px;
-	border-right-width: 3px;
-	border-color: #21ce99;
-	color: orangered;
+	background-color: white;
+    color: #4CC2EF;
 }
 
 .searchbutton {
@@ -52,10 +48,10 @@ body {
 	text-align: center;
 	margin-left: 35%;
 	margin-bottom: 20px;
-	color: white;
-	background-color: #21ce99;
+	color: #4CC2EF;
+	background-color: white;
 	border-style: solid;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px 2px 2px 2px;
 	height: 30px;
 	line-height: 30px;
 }
@@ -65,19 +61,19 @@ body {
 	text-align: center;
 	margin-left: 35%;
 	margin-bottom: 20px;
-	border-color: #21ce99;
-	color: #21ce99;
-	background-color: white;
+	border-color: white;
+	color: white;
+	background-color: #4CC2EF;
 	border-style: solid;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px 2px 2px 2px;
 }
 
 .catagory {
-	font-size: 40px;
+	font-size: 30px;
 	font-family: sans-serif;
 }
 
 .value {
-	font-size: 25px;
+	font-size: 15px;
 	font-family: sans-serif;
 }

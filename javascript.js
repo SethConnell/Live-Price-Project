@@ -1,6 +1,8 @@
+var hasButtonBeenClicked = 0;
 function searchStockSymbol(symbol) {
 	$.ajax({url: "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20('" + symbol +"')&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=", success:
         function(result){
+            $(".boxy").append("<div class = 'results'></div>");
 			var name = JSON.stringify(result.query.results.quote.Name);
 			name = "<span class = 'catagory'>Name: </span>" + "<span class = 'value'>" + name.split('"').join("") + "</span>" + '<br>';
             $(".results").append(name);
@@ -14,7 +16,11 @@ function searchStockSymbol(symbol) {
 };
 
 $(document).ready(function(){
-    $('.searchbutton').on('click', function(e) {  
+        $('.searchbutton').on('click', function(e) {  
+            if (hasButtonBeenClicked !== 0) {
+                $(".results").remove();
+            }
+            hasButtonBeenClicked += 1;
 		var symbolly = $('.searchbox').val();
         searchStockSymbol(symbolly);
     });
